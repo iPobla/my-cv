@@ -5,35 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
-    <link rel="icon" href="assets/images/codigo.png">
+    <link rel="icon" href="assets/images/icono.png">
     <title>Sebastián Poblete</title>
 </head>
 <body>
-    <section class="foto">
+    <header class="header">
+        <div class="logo">
+            <a href="#fotocv"><img src="assets/images/cup.png"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#datos-personales">Datos</a></li>
+                <li><a href="#experiencia-profesional">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+            </ul>
+        </nav>
+        <a href="#formulario-contacto" class="btn-contacto"><button>Contacto</button></a>
+    </header>
+
+    <section class="fotocv" id="fotocv">
+    <div class="container-fotocv">
         <img src="assets/images/foto-principal.jpg" class="foto-cv" width="200px">
+    </div>
     </section>
 
-    <section class="datos-personales">
+    <section class="datos-personales" id="datos-personales">
     <h1>Datos Personales</h1>
-    <p><img src="assets/images/carne-de-identidad.png"> Sebastián Poblete</p>
-    <p><img src="assets/images/gmail.png"> sebapoba@gmail.com</p>
-    <p><img src="assets/images/chile.png"> +56 9 3055 1593</p>
-    <a href="https://github.com/iPobla?tab=repositories"><img src="assets/images/github.png" alt=""></a>
-    <a href="https://www.linkedin.com/in/sebapoba/"><img src="assets/images/linkedin.png" alt=""></a>
+    <div class="container-datos-personales">
+        <p><img src="assets/images/carne-de-identidad.png"> Sebastián Poblete</p>
+        <p><img src="assets/images/gmail.png"> sebapoba@gmail.com</p>
+        <p><img src="assets/images/chile.png"> +56 9 3055 1593</p>
+        <a href="https://github.com/iPobla?tab=repositories"><img src="assets/images/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/sebapoba/"><img src="assets/images/linkedin.png" alt=""></a>
+    </div>
     </section>
 
-    <section class="experiencia-profesional">
+    <section class="experiencia-profesional" id="experiencia-profesional">
         <h1>Experiencia Profesional (Que me gustaría tener)</h1>
+        <div class="container-experiencia-profesional">
         <ul>
             <li>Desarrollador Frontend Junior en "NTT DATA", encargado del diseño y la creación de páginas web de la empresa. Diciembre 2022 - Diciembre 2023.</li>
             <li>Desarrollador Backend Junior en "Mobilize", encargado de la implementación y mantención de API's. Enero 2024. - Diciembre 2024.</li>
             <li>Desarrollador Full Stack Semi Senior en "Mobilize", encargado del manejo de Bases de Datos, servicios cloud y testing. Enero 2025 - Diciembre 2025.</li>
             <li>Desarrollador Ful Stack Semi Senior en "Falabella", encargado del desarrollo de estructura y arquitectura web, optimización de aplicaciones web y crear y gestionar bases de datos eficientes. Enero 2026 - Actual.</li>
         </ul>
+        </div>
     </section>
 
-    <section class="habilidades">
+    <section class="habilidades" id="habilidades">
         <h1>Habilidades</h1>
+        <div class="container-habilidades">
         <table class="tabla-habilidades">
             <tr>
                 <th>Tecnologías</th>
@@ -72,10 +94,12 @@
                 <td>Plataforma móvil creada por Google, cuya principal función es desarrollar y facilitar la creación de apps de elevada calidad de una forma rápida, con el fin de que se pueda aumentar la base de usuarios.</td>            
             </tr>
         </table>
+        </div>
     </section>
 
-    <section class="intereses">
+    <section class="intereses" id="intereses">
         <h1>Intereses</h1>
+        <div class="container-intereses">
         <table class="tabla-intereses">
             <tr>
                 <th>Intereses</th>
@@ -98,13 +122,16 @@
                 <td>El uso del celular es indispensable para la mayoría de las personas hoy en día, por lo que me gusta aprender sobre desarrollo móvil, como por ejemplo con Flutter.</td>
             </tr>
         </table>
+        </div>
     </section>
 
-    <section class="formulario-contacto">
+    <section class="formulario-contacto" id="formulario-contacto">
         <h1>Contacto</h1>
+        <div class="container-contacto">
         <input type="mail" placeholder="Correo">
         <input type="textarea" placeholder="Mensaje">
         <input type="submit" value="Enviar">
+        </div>
     </section>
     
     <footer class="pie-pagina">

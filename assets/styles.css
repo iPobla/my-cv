@@ -1,5 +1,11 @@
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFDF9;
 }
 
 table {
@@ -25,4 +31,72 @@ th, td {
     height: 250px;
     width: 250px;
     border-radius: 100%;
+}
+
+.header {
+    background-color: #FFFDF9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+    padding: 5px 10%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img {
+    height: 40px;
+    width: auto;
+    transition: all 0.13s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #FFC312;
+}
+
+.header .btn-contacto button {
+    font-weight: 700;
+    color: black;
+    padding: 8px 25px;
+    background: #dcdde1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+.header .btn-contacto button:hover {
+    background-color: #FFC312;
+    color: black;
+    transform: scale(1.1);
 }
