@@ -28,9 +28,10 @@ th, td {
 }
 
 .foto-cv {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border-radius: 100%;
+    border-style: solid;
 }
 
 .header {
@@ -80,7 +81,7 @@ th, td {
 }
 
 .header .nav-links li a:hover {
-    color: #FFC312;
+    color: #FFC54D;
 }
 
 .header .btn-contacto button {
@@ -99,4 +100,41 @@ th, td {
     background-color: #FFC312;
     color: black;
     transform: scale(1.1);
+}
+
+.datos-personales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.foto-nombre h1 {
+    font-size: 35px;
 }
