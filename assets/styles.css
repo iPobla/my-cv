@@ -340,3 +340,9 @@ footer {
   color: #fff;
   margin: 0 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  header .nav-links li a {
+    font-size:calc(12px + 0.5vw);
+  }
+}
