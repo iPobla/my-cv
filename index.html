@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="icon" href="assets/images/icono.png">
     <title>Sebastián Poblete</title>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <a href="#fotocv"><img src="assets/images/cup.png"></a>
+            <a href="#foto-cv"><img src="assets/images/cup.png"></a>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#datos-personales">Datos</a></li>
-                <li><a href="#experiencia-profesional">Experiencia</a></li>
+                <li><a href="#xperiencia-profesional">Experiencia</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#intereses">Intereses</a></li>
             </ul>
@@ -26,14 +28,27 @@
 
     <section class="datos-personales" id="datos-personales">
     <div class="foto-nombre" id="foto-nombre">
-        <img src="assets/images/foto-principal.jpg" class="foto-cv" width="200px">
+        <img src="assets/images/foto-principal.jpg" class="foto-cv" id="foto-cv" width="200px">
         <h1>Sebastián Poblete</h1>
+        <p>Desarrollador Front-End Junior</p>
     </div>
     <div class="container-datos-personales">
-        <p><img src="assets/images/gmail.png"> sebapoba@gmail.com</p>
-        <p><img src="assets/images/chile.png"> +56 9 3055 1593</p>
-        <a href="https://github.com/iPobla?tab=repositories"><img src="assets/images/github.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/sebapoba/"><img src="assets/images/linkedin.png" alt=""></a>
+        <div class="tarjeta" id="tarjeta">
+            <img src="assets/images/gmail.png">
+            <p>sebapoba@gmail.com</p>
+        </div>
+        <div class="tarjeta" id="tarjeta">
+            <img src="assets/images/chile.png">
+            <p>+56 9 3055 1593</p>
+        </div>
+        <div class="tarjeta" id="tarjeta">
+            <a href="https://github.com/iPobla?tab=repositories"><img src="assets/images/github.png" alt=""></a>
+            <p>GitHub</p>
+        </div>
+        <div class="tarjeta" id="tarjeta">
+            <a href="https://www.linkedin.com/in/sebapoba/"><img src="assets/images/linkedin.png" alt=""></a>
+            <p>LinkedIn</p>
+        </div>
     </div>
     </section>
 
@@ -42,7 +57,7 @@
         <h1>Experiencia Profesional (Que me gustaría tener)</h1>
         <ul>
             <li>Diciembre 2022 - Diciembre 2023: Desarrollador Frontend Junior en "NTT DATA", encargado del diseño y la creación de páginas web de la empresa.</li>
-            <li>Enero 2024. - Diciembre 2024: Desarrollador Backend Junior en "Mobilize", encargado de la implementación y mantención de API's.</li>
+            <li>Enero 2024 - Diciembre 2024: Desarrollador Backend Junior en "Mobilize", encargado de la implementación y mantención de API's.</li>
             <li>Enero 2025 - Diciembre 2025: Desarrollador Full Stack Semi Senior en "Mobilize", encargado del manejo de Bases de Datos, servicios cloud y testing.</li>
             <li>Enero 2026 - Actual: Desarrollador Ful Stack Semi Senior en "Falabella", encargado del desarrollo de estructura y arquitectura web, optimización de aplicaciones web y crear y gestionar bases de datos eficientes.</li>
         </ul>
@@ -51,14 +66,14 @@
 
     <section class="habilidades" id="habilidades">
         <div class="container-habilidades">
-        <h1>Habilidades</h1>
+            <h1>Habilidades</h1>
         <table class="tabla-habilidades">
             <tr>
                 <th>Tecnologías</th>
                 <th>Habilidades Técnicas</th>
             </tr>
             <tr>
-                <td><img src="assets/images/java.png" class="img-habilidades"><br><p>Java</p></td>            
+                <td ><img src="assets/images/java.png" class="img-habilidades"><br><p>Java</p></td>            
                 <td>Creación de servicios web que puedan ser consumidos. Estos servicios suelen ofrecer datos a los clientes, por medio de un API REST.</td>            
             </tr>
             <tr>
@@ -121,16 +136,26 @@
         </div>
     </section>
 
-    <section class="formulario-contacto" id="formulario-contacto">
+    <section class="contacto" id="contacto">
         <div class="container-contacto">
         <h1>Contacto</h1>
-        <input type="mail" placeholder="Correo">
-        <input type="textarea" placeholder="Mensaje">
-        <input type="submit" value="Enviar">
+        <form action="" class="formulario-contacto" id="formulario-contacto">
+                <input type="text" placeholder="Nombre" class="input-contacto">
+                <input type="mail" placeholder="Correo" class="input-contacto">
+                <textarea name="" id="" cols="0" rows="10" class="input-contacto"></textarea>
+                <input type="button" value="Enviar" class="boton-contacto boton">
+            </form>
         </div>
     </section>
     
-    <footer class="pie-pagina">
+    <footer class="pie-pagina" id="pie-pagina">
+        <p class="footer-titulo" id="footer-titulo">CV Sebastián Poblete</p>
+        <div class="footer-social" id="footer-social">
+            <a href="https://www.facebook.com/iPobla/" class="footer-icono"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/sr_jengibre/" class="footer-icono"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://twitter.com/sebapoba" class="footer-icono"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://wa.me/56930551593?text=Hola!%20Necesito%20informaci%C3%B3n%20sobre%20tu%20servicio%20de%20desarrollo%20web!" class="footer-icono"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
         <p>© 2022 Todos los derechos reservados</p>
     </footer>
 </body>
